@@ -1,0 +1,35 @@
+.sidebar-right {
+  width: 180px;
+  background-color: #f4f6fb;
+  padding: 20px;
+  border-left: 3px solid rgba(128, 128, 128, 0.276);
+}
+
+.user-box {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.user-box img {
+  width: 50px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.darkmode {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.sidebar-right.dark {
+  background-color: #141e33;
+  color: white;
+}
+
+.sidebar-right.light {
+  background-color: #fff;
+  color: black;
+}

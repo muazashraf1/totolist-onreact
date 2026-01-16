@@ -1,0 +1,124 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  /* border: 5px solid red; */
+}
+
+.popup-content {
+  border: 2px solid gray;
+  width: 400px;
+  background-color: #f7faff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 5px  solid red; */
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.close-btn {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.popup-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-body label {
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.popup-body input[type="text"],
+.popup-body input[type="date"],
+.popup-body textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  border: 3px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.popup-body textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.check-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.check-boxes label {
+  font-size: 14px;
+  color: #292929;
+}
+
+.add-task-btn {
+  padding: 10px;
+  background-color: #a34ee4d0;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.add-task-btn:hover {
+  background-color: #a44ee4;
+}
+
+/* ================== Dark Mode Styling */
+
+.popup-header.dark h2,
+.popup-header.dark span {
+  color: white;
+}
+
+.popup-body.dark label {
+  color: #b1c0e3;
+}
+
+.popup-body.dark input[type="text"],
+.popup-body.dark input[type="date"],
+.popup-body.dark ::placeholder,
+.popup-body.dark textarea {
+  background-color: #141e33;
+  border: none;
+  color: white;
+}

@@ -1,0 +1,76 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #d9e0f3;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-left {
+  width: 220px;
+  background-color: #f4f2fc;
+  padding: 25px 20px;
+  border-right: 3px solid #d0d0d0;
+}
+
+.sidebar-left h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.btn-purple {
+  background-color: #a135f0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.sidebar-left ul {
+  list-style: none;
+}
+
+.sidebar-left ul li {
+  margin-bottom: 15px;
+  padding: 10px 30px;
+  margin-left: -40px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+
+.sidebar-left.dark {
+  background-color: #141e33 !important;
+  color: white !important;
+}
+
+.sidebar-left.light {
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.sidebar-left.dark ul > li {
+  color: #f4f2fc;
+}
+
+
+.non-active {
+  background-color: white;
+}
+
+.active-filter {
+  background-color: #a235f0d6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
