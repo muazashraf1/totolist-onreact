@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import "../Styling/Main.css"
 import PopUp from '../Components/PopUp'
 
